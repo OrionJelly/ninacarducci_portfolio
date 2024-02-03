@@ -165,7 +165,7 @@ body {
 
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-size: 24px;
 }
@@ -370,6 +370,12 @@ input[type="submit"] {
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
+	.picture {
+		height: auto;
+		width: 100%;
+	}
+
 	#services .container {
 		align-items: center;
 	}
@@ -385,9 +391,6 @@ input[type="submit"] {
 	form {
 		width: 100%;
 	}
-	.picture {
-		height: 100%;
-		width: 80%;
-	}
+
 }
 
