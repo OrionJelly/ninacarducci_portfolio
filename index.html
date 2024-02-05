@@ -2,26 +2,37 @@
 <html lang="fr">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" type="image/jpeg"
 		href="./assets/images/favicon.jpg" />
+
 	<link rel="preload" as="image"
 		href="./assets/images/slider/ryoji-iwata-400.webp" imagesrcset="./assets/images/slider/ryoji-iwata-400.webp 400w,
 		                ./assets/images/slider/ryoji-iwata-800.webp 800w,
 		                ./assets/images/slider/ryoji-iwata.webp 1920w "
 		imagesizes="(max-width: 400px) 100vw, 400px"
 		media="(min-width: 651px)" />
+
 	<link rel="preload" as="image"
 		href="./assets/images/slider/nicholas-green-400.webp" imagesrcset="./assets/images/slider/nicholas-green-400.webp 400w,
 					         ./assets/images/slider/nicholas-green-800.webp 800w,
 					        ./assets/images/slider/nicholas-green.webp 1920w "
 		imagesizes="(max-width: 400px) 100vw, 400px"
 		media="(min-width: 651px)" />
+
 	<link rel="preload" as="image"
 		href="./assets/images/slider/edward-cisneros-400.webp" imagesrcset="./assets/images/slider/edward-cisneros-400.webp 400w,
 							./assets/images/slider/edward-cisneros-800.webp 800w,
 							./assets/images/slider/edward-cisneros.webp 1920w "
 		imagesizes="(max-width: 400px) 100vw, 400px"
 		media="(min-width: 651px)" />
+
+	<link rel="preload" as="image"
+		href="./assets/images/nina.webp"
+		imagesrcset="./assets/images/nina-280.webp 280w,
+					./assets/images/nina.webp 500w"
+		imagesizes="(max-width: 400px) 100vw, 280px" />
+
 	<meta charset="utf-8" />
 	<!-- Préchargement des feuilles de style -->
 	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css"
@@ -35,7 +46,7 @@
 		crossorigin />
 	<link rel="preconnect" href="https://fonts.gstatic.com"
 		crossorigin />
-	<link rel="preconnect"
+	<link rel="preload, font"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		crossorigin media="all"/>
 	<!-- Script JS -->
@@ -94,7 +105,7 @@
 		content="Photographe professionnelle basée à Bordeaux, capturant l'essence unique de moments précieux. Spécialisée dans les portraits, mariages, événements d'entreprise et photographie artistique. Parcourez mon portfolio pour découvrir des images saisissantes. Disponible pour des séances photo à Bordeaux et partout en France. Contactez-moi pour immortaliser vos moments spéciaux avec un regard professionnel et créatif." />
 	<meta property="og:image"
 		content="https://orionjelly.github.io/ninacarducci_portfolio/assets/images/nina-280.webp" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<meta name="robots" content="index, follow">
 	<title>Nina Carducci - Photographe portraitiste professionnelle (Bordeaux)
 	</title>
@@ -192,8 +203,12 @@
 		</section>
 		<section id="about" itemscope itemtype="https://schema.org/Person">
 			<picture class="picture left">
-
-				<img itemprop="image" src="./assets/images/nina.webp"
+				<source type="image/webp"
+					srcset="./assets/images/nina-280.webp"
+					media="(max-width: 400px)">
+					<source type="image/webp" srcset="./assets/images/nina.webp"
+						media="(min-width: 401px)">
+				<img itemprop="image" src="./assets/images/nina-280.webp"
 					alt="Nina Carducci - Photographe professionnelle (Bordeaux)">
 			</picture>
 			<article id="about-me">
